@@ -36,7 +36,7 @@ const llamadaAPI = {
         let lat = document.getElementById('latitude').value; //Valor latitud
         let lon = document.getElementById('longitude').value; //Valor longitud
         let key = '88fc269efe180b6a3086054d9574c3b6';
-        let lang = 'en'; //Se pone como idioma predeterminado el inglés
+        let lang = 'es'; //Se pone como idioma predeterminado el inglés
         let units = 'metric';
         //url con los atrubutos definidos que pueden variar
         let url = `http://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${key}&units=${units}&lang=${lang}`;
