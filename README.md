@@ -25,20 +25,19 @@ Si se navega por el menú la primera sección es: ¿Quiénes somos?, compuesta p
 ##  Nuestra historia
 Esta sección no se ha modificado con respecto a la última entrega (Práctica 3).
 
-
 # Un mundo sostenible
 La tercera sección correspondiente al menú es: Un mundo sostenible, compuesta por dos páginas: Con las personas y Con el medio ambiente. Estas dos páginas tampoco han sido modificadas con respecto a la entrega anterior, pero sí se integraron componentes como fotos, vídeos y se jugó con la disposición de cada elemento para hacerlo visual y practcar con lo que ofrece bootstrap.
 
 # Inversores y accionistas
-La cuarta sección correspondiente al menú es: Inversores y accionistas. Es la más simple de todas ellas, compuesta por tres cards, cada una con una imagen representativa y un correo desde el cual se puede enviar un email si se desea.
+La cuarta sección correspondiente al menú es: Inversores y accionistas. Es la más simple de todas ellas, compuesta por tres cards, cada una con una imagen representativa y un correo desde el cual se puede enviar un email si se desea. No se ha modificado con respecto la práctica anterior (Práctica 3).
 
 # Información relativa al tiempo
-Esta es la sección en la que se desarrolla gran parte de lo requerido en la práctica. Se pedía interaccionar con una API REST y visualizar en el documento la información,  empleando el Framework CSS Bootstrap. Para ello se ha creado una especie de página meteorológica. De la API mencionada anteriormente se saca información relativa a la geolocalización que se proporciona por pantalla y al dar a imprimir se crean dos nuevas secciones. La primera imprime cuatro tarjetas con información detallada sobre el tiempo del día actual y los próximos tres, y debajo aparece una gráfica que representa la temperatura diurna y nocturna de toda la semana. Para ello, en el fichero intex.js, se ha hecho uso de llamadas asíncronas a un API REST, promesas e interacción al DOM. 
+Esta es la sección en la que se desarrolla la parte principal de lo requerido en la práctica. Se pedía interaccionar con una API REST y visualizar en el documento la información,  empleando el Framework CSS Bootstrap. Para ello se ha creado una especie de página meteorológica. De la API mencionada anteriormente se saca información relativa a la geolocalización que se proporciona por pantalla y al dar a imprimir se crean dos nuevas secciones. La primera imprime cuatro tarjetas con información detallada sobre el tiempo del día actual y los próximos tres, y debajo aparece una gráfica que representa la temperatura diurna y nocturna de toda la semana. Para ello, en el fichero intex.js, se ha hecho uso de llamadas asíncronas a un API REST, promesas e interacción al DOM. 
 Para poner a prueba la página:
 - Introduzca la latitud del lugar que quiere buscar donde pone "Introduzca la latitud"
 - Introduzca la longitud del lugar que quiere buscar donde pone "Introduzca la longitud"
-- Una vez tenga ambas coordenadas pulse el botón "Get weather". Tras pulsar deberá aparecerle por pantalla lo descrito anteriormente
 - Si desea obtener las coordenadas de su posición actual pulse "Use current location"
+- Una vez tenga ambas coordenadas pulse el botón "Get weather". Tras pulsar deberá aparecer por pantalla lo descrito anteriormente
 - Si introduce una localización erronea se imprimirá por consola el tipo de error que ha sucedido en función del status
 - Relacionado con la gráfica:
   - Si pulsa pulsa "temperatura diurna" (arriba, centrado, recuadro verde) desaparecerá la información relativa
@@ -46,12 +45,12 @@ Para poner a prueba la página:
   - Si pasa el ratón por algún punto marcado de la gráfica aparecerá un recuadro con la información correspondiente
 
 # Pages
-Finalmente, el menú muestra una sección llamada pages que contiene los formularios correspondientes a la página. Puede inciar sesión, registrarse e incluso dejar un comentario. Aunque no esté implementado aun, en caso de haber olvidado la conntraseña, hay un formulario para restaurarla. A los formularios se les ha añadido validación, de tal forma que si algún campo no se rellena adecuadamente o se deja vacío aparecerá un mensaje en la parte superior del formulario en rojo indicando el error. Sabrá que se ha enviado correctamente porque aparecerá una alerta y se le redirigirá a la página principal. Esto se ha implementado en el fichero "formulario.js" haciendo uso de DOM.
+Finalmente, el menú muestra una sección llamada pages que contiene los formularios correspondientes a la página. Puede inciar sesión, registrarse e incluso dejar un comentario. Aunque no esté implementado aun, en caso de haber olvidado la contraseña, hay un formulario para restaurarla. A los formularios se les ha añadido validación, de tal forma que si algún campo no se rellena adecuadamente o se deja vacío aparecerá un mensaje en la parte superior del formulario en rojo indicando el error. Sabrá que se ha enviado correctamente porque aparecerá una alerta y se le redirigirá a la página principal. Esto se ha implementado en el fichero "formulario.js" haciendo uso de DOM.
 Validaciones de los formularios:
 - El nombre tiene que ser de al menos dos letras
 - El apellido tiene que ser al menos de dos letras
-- La edad tiene que ser un número y no puede ser nula
-- El correo electrónico tiene contener un "@" y letras antes y después del @
+- La edad tiene que ser numérica y no puede ser nula
+- El correo electrónico tiene que contener un "@" y letras antes y después del @
 - El teléfono tiene que ser numérico y de longitud 9
 - El DNI tiene que ser de longitud 9
 - La contraseña no puede ser nula
